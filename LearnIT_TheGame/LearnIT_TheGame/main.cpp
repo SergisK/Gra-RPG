@@ -61,6 +61,7 @@ struct Player
 		}	
 	}
 };
+
 struct Enemy
 {
 	string nazwa = "Chrzaszcz";
