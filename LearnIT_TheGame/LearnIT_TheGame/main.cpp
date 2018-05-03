@@ -27,40 +27,38 @@ struct Player
 		else return 0;
 	}
 	void lvlUP() {
-			do {
-				currentEXP -= maxEXP;
-				lvl++;
-				skillPoints += 2;
-			} while (currentEXP >= maxEXP);
-			while (skillPoints > 0) {
-				system("cls");
-				cout << "Masz " << skillPoints << " punkty do rozdania!" << endl;
-				cout << "Twoje staty:" << endl;
-				cout << "1.Sila: " << strength << endl;
-				cout << "2.Witalnosc: " << vitality << endl;
-				cout << "3.Zrecznosc: " << agility << endl;
-				cout << "Co dodac?(1,2,3)";
-				int choice = 0;
-				cin >> choice;
-				switch (choice) {
-					case 1:
-						strength++;
-						break;
-					case 2:
-						vitality++;
-						maxHp += 10;
-						currentHp = maxHp;
-						break;
-					case 3:
-						agility++;
-						dodge++;
-						hitChance++;
-						break;
-					}
-				skillPoints--;
-			}
-			
-	
+		do {
+			currentEXP -= maxEXP;
+			lvl++;
+			skillPoints += 2;
+		} while (currentEXP >= maxEXP);
+		while (skillPoints > 0) {
+			system("cls");
+			cout << "Masz " << skillPoints << " punkty do rozdania!" << endl;
+			cout << "Twoje staty:" << endl;
+			cout << "1.Sila: " << strength << endl;
+			cout << "2.Witalnosc: " << vitality << endl;
+			cout << "3.Zrecznosc: " << agility << endl;
+			cout << "Co dodac?(1,2,3)";
+			int choice = 0;
+			cin >> choice;
+			switch (choice) {
+				case 1:
+					strength++;
+					break;
+				case 2:
+					vitality++;
+					maxHp += 10;
+					currentHp = maxHp;
+					break;
+				case 3:
+					agility++;
+					dodge++;
+					hitChance++;
+					break;
+				}
+			skillPoints--;
+		}	
 	}
 };
 struct Enemy
