@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\pogol\documents\test\learnit_thegame\learnit_thegame\main.cpp(91): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LearnIT_TheGame.vcxproj -> C:\Users\pogol\Documents\test\LearnIT_TheGame\Debug\LearnIT_TheGame.exe
